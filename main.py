@@ -66,6 +66,13 @@ def change_room(room_list):
     return set(arr)
 
 
+def silence():
+    pg.press("Enter")
+    pg.write("/silence Incorrect version, try to reload the game.")
+    pg.press("Enter")
+    time.sleep(2)
+
+
 def ulist():
     arr = userlist.getUserlist()
     #print(arr, len(arr))
@@ -91,6 +98,7 @@ def clear_userlist():
 def main(luadata):
     
     #log()
+    silence()
     get_data()
     inviter(luadata=luadata)
     #clear_userlist()
