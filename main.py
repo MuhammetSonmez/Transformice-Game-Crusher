@@ -10,9 +10,9 @@ def log():
         print(pg.position())
 
 def goto_tribe_room():
-    pg.moveTo(1075,820)
+    pg.moveTo(1075,820, 1)
     pg.click()
-    pg.moveTo(1680, 600)
+    pg.moveTo(1680, 600, 1)
     pg.click()
     time.sleep(3)
 
